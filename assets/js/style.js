@@ -41,11 +41,9 @@ const hoursContainer = document.querySelector('#hours')
 const daysContainer = document.querySelector('#days')
 const loadingContainer = document.querySelector('#loading')
 const countdownContainer = document.querySelector('#countdown')
-
 const eventDate = new Date('November 30 2021 00:00:00')/**inserir a data do final do evento */
-
 const updateCountdown = () =>{
-  const currenTime = new Date()
+const currenTime = new Date()
   const difference = eventDate - currenTime
   const days = Math.floor(difference / 1000 / 60 / 60 / 24)
   const hours = Math.floor(difference / 1000 / 60 / 60 ) % 24
